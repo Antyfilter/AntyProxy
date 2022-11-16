@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+{% if site.description %}<meta name="description" content="{{ site.description }}">{% endif %}
+{% if site.author %}<meta name="author" content="{{ site.author }}">{% endif %}
+<!-- built with bootstrap5-template https://github.com/thecdil/bootstrap5-template -->
+<meta name="generator" content="thecdil/bootstrap5-template">
+<link rel="shortcut icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
+
+<!-- <link rel="stylesheet" href="{{ '/assets/lib/bootstrap.min.css' | relative_url }}"> -->
+<link rel="stylesheet" href="{{ '/assets/lib/bootstrap.rtl.min.css' | relative_url }}">
+{% if page.head %}{% include {{ page.head }} %}{% endif %}
+{% if layout.head %}{% include {{ layout.head }} %}{% endif %}
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}" type="text/css">
+
+{% if site.noindex == true or page.noindex == true %}<meta name="robots" content="noindex">{% endif %}
+{% include template/analytics.html %}
+<!-- Last build date: {{ site.time | date: "%Y-%m-%d" }} -->

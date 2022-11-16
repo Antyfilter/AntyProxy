@@ -1,0 +1,61 @@
+#######
+#
+# bootstrap5-template
+# basic bootstrap 5 template for Jekyll with GitHub Pages
+# https://github.com/thecdil/bootstrap5-template
+#
+#######
+
+#######
+# SITE SETTINGS
+#
+title: گذرنده
+description: "ما در تلاشیم روشی ساده و کارآمد را برای عبور از سختی ها معرفی کنیم"
+year: 2022
+author: نووان
+# add search box to navbar, true/false
+search: true
+
+##########
+# URL VARIABLES [optional!]
+#
+# Optional if using GitHub Pages! If building manually, these must be set correctly.
+#
+# use url for the domain, e.g. https://thecdil.github.io
+# on gh-pages follow the pattern: https://username.github.io
+url:
+# use baseurl to add subsection of the domain, e.g. /timelinejs-template
+# on gh-pages this is a / followed by the name of the repository
+# baseurl is your github repository's name prefixed with a /
+baseurl:
+# location of code, the full url to your github repository
+source-code: https://github.com/Antyfilter/AntyProxy
+
+##########
+# GOOGLE ANALYTICS [optional!]
+#
+# leave this blank or comment out to NOT include google code
+# Add your google-analytics-id to automatically add the embed code, e.g. "UA-76328753-1"
+google-analytics-id:
+
+##########
+# ROBOTS EXCLUDE [optional!]
+#
+# set noindex to true if you do NOT want Google to index your site
+# noindex: true 
+
+
+#######
+# BUILD SETTINGS [usually leave as is]
+#
+# Defaults to simplify front matter,
+# all files in the "pages" folder will be output at root of site
+defaults:
+  - scope:
+      path: "pages"
+    values:
+      layout: page
+      permalink: /:basename:output_ext
+
+# ignore stuff
+exclude: [docs/, Rakefile, README.md, LICENSE]
