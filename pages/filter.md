@@ -114,7 +114,7 @@ rule-providers:
   iran:
     type: http
     behavior: classical
-    url: "https://raw.githubusercontent.com/hiddify/clash/main/iran.yml"
+    url: "https://antyfilter.github.io/AntyProxy/clash/iran.yml"
     path: ./ruleset/iran.yaml
     interval: 432000
 rules:

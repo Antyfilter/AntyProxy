@@ -19,9 +19,9 @@ nav_order: 2
 
 ## کار با کلش ویندوز و مک
 ابندا لینک تنظیمات کلش را کپی کنید (موقع ساخت سرور کپی کردید) را در قسمت 1 تصویر دوم گیف قرار دهید و مراحل را مطابق گیف زیر انجام دهید
-{% include figure.html img="http://hiddify.github.io/assets/clash_windows.gif" alt="How to use clash for windows and macOS" caption="How to use clash for windows and macOS" %}
+{% include figure.html img="http://antyfilter.github.io/AntyProxy/assets/clash_windows.gif" alt="How to use clash for windows and macOS" caption="How to use clash for windows and macOS" %}
 
 
 ## کار با کلش اندروید
 ابندا لینک تنظیمات کلش را کپی کنید (موقع ساخت سرور کپی کردید) را در بخش 2 مرحله 4 قرار دهید و مراحل را مطابق گیف زیر انجام دهید
-{% include figure.html img="http://hiddify.github.io/assets/clash_android.gif" alt="How to use clash for Android" caption="How to use clash for Android" %}
+{% include figure.html img="https://antyfilter.github.io/AntyProxy/assets/clash_android.gif" alt="How to use clash for Android" caption="How to use clash for Android" %}
