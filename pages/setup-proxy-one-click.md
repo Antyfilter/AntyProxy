@@ -80,12 +80,12 @@ Same as v2ray
 </details>
 <details markdown="1"> <summary>Open Source</summary> 
 
-کلیه سورس کدها در [گیت هاب](https://github.com/hiddify/hiddify-config) 
+کلیه سورس کدها در [گیت هاب](https://github.com/Antyfilter/AntyProxy) 
 </details>
 
 # پیش نیازها:
 - یک vps آماده با ubuntu 20.04 و آی پی مثلا `1.1.1.1`
-- یک دامنه یا زیردامنه (برای مثال: `myservice.hiddify.com`) که رکورد A ی آن به آی پی شما وصل باشد. اگر زیر دامنه ندارید از 
+- یک دامنه یا زیردامنه (برای مثال: `myservice.antyfilter.com`) که رکورد A ی آن به آی پی شما وصل باشد. اگر زیر دامنه ندارید از 
  [این لینک](create-subdomain.html)
 یک زیر دامنه برای خود بسازید
 
@@ -96,7 +96,7 @@ Same as v2ray
     <div class="input-group-prepend">
       <div class="input-group-text">domain</div>
     </div>
-    <input  type="text" class="form-control" id="userdomain" placeholder="domain" value="myservice.hiddify.com" oninput="handleValueChange()">
+    <input  type="text" class="form-control" id="userdomain" placeholder="domain" value="myservice.antyfilter.com" oninput="handleValueChange()">
   </div>
 </form>  
 <form class="form-inline">
@@ -111,7 +111,7 @@ Same as v2ray
 
 ### مرحله 2: چک کردن آنکه این زیر دامنه به آی پی متصل است 
 با کلیک بر روی دکمه 
-<a href="https://mxtoolbox.com/SuperTool.aspx?action=a%3amyservice.hiddify.com&run=toolpage" target="_blank" class="btn btn-primary">check</a>
+<a href="https://mxtoolbox.com/SuperTool.aspx?action=a%3amyservice.antyfilter.com&run=toolpage" target="_blank" class="btn btn-primary">check</a>
 چک کنید که زیر دامنه درست به IP اشاره میکند.
 اگر تازه انجام داده اید و در بالا IP سرور خود را نمی بینید 5 دقیقه صبر کنید و مجدد تست کنید
 
@@ -120,14 +120,14 @@ Same as v2ray
 
 به سرور خود با ssh متصل شوید و دستور زیر را اجرا کنید
 ```
-bash <(curl -sL https://raw.githubusercontent.com/hiddify/config/main/install.sh) 751F2F753854422EA4C5FDDB8314F068 myservice.hiddify.com all myservice.hiddify.com
+bash <(curl -sL https://raw.githubusercontent.com/Antyfilter/AntyProxy/main/install.sh) 751F2F753854422EA4C5FDDB8314F068 myservice.antyfilter.com all myservice.antyfilter.com
 ```
             
 <!--
-curl https://raw.githubusercontent.com/hiddify/config/main/install.sh | bash -s -- 751F2F753854422EA4C5FDDB8314F068 myservice.hiddify.com all myservice.hiddify.com
-bash install.sh 751F2F753854422EA4C5FDDB8314F068 myservice.hiddify.com all myservice.hiddify.com-->
+curl https://raw.githubusercontent.com/Antyfilter/AntyProxy/main/install.sh | bash -s -- 751F2F753854422EA4C5FDDB8314F068 myservice.antyfilter.com all myservice.antyfilter.com
+bash install.sh 751F2F753854422EA4C5FDDB8314F068 myservice.antyfilter.com all myservice.antyfilter.com-->
 پس از اجرای موفقیت آمیز، سرور ری استارت میشود و با کلیک بر روی لینک زیر میتوانید جزییات کانفیگ سمت کلاینت سرور را ببینید:
-<a href="https://myservice.hiddify.com/751F2F753854422EA4C5FDDB8314F068/" target='_blank' class='btn btn-primary'>تنظیمات اختصاصی برای کلاینت ها </a>
+<a href="https://myservice.antyfilter.com/751F2F753854422EA4C5FDDB8314F068/" target='_blank' class='btn btn-primary'>تنظیمات اختصاصی برای کلاینت ها </a>
 <div class="alert alert-success">
 توجه داشته باشید که لینک را حتما کپی کنید. این لینک به صورت تصادفی ایجاد شده و با ریفرش شدن صفحه تغییر میکند  پس آن را در جای امنی ذخیره کنید
 </div>
@@ -140,7 +140,7 @@ bash install.sh 751F2F753854422EA4C5FDDB8314F068 myservice.hiddify.com all myser
 ابتدا دستور زیر را اجرا کنید و سپس دستورات بالا را مجدد اجرا کنید. 
                                  
 ```
-rm -rf /opt/hiddify-config/ 
+rm -rf /opt/AntyProxy/ 
 ```
 
 </details>
@@ -160,11 +160,11 @@ rm -rf /opt/hiddify-config/
 - قبل از خرید دامنه ابتدا دامنه را چک کنید که در ابرآروان مورد پذیرش قرار دهد
 - سپس یک اکانت در ابرآروان ایجاد کنید میتوانید با یک شماره خارجی اینکار را انجام دهید
 - سپس nameserver بر روی دامنه ای که خریداری کرده اید را مطابق اعلامی ابرآروان پر کنید
-- سپس روی زیر دامنه دلخواه، آی پی سرور را تنظیم کنید و تیک کلود سرویس  را تنظیم کنید و سپس به جای `myservice.hiddify.com`  زیردامنه جدید خود را تنظیم کنید. لازم است این زیر دامنه با دامنه ای که در بالا انتخاب کرده اید متفاوت باشد.
+- سپس روی زیر دامنه دلخواه، آی پی سرور را تنظیم کنید و تیک کلود سرویس  را تنظیم کنید و سپس به جای `myservice.antyfilter.com`  زیردامنه جدید خود را تنظیم کنید. لازم است این زیر دامنه با دامنه ای که در بالا انتخاب کرده اید متفاوت باشد.
 - سپس لینک زیر را با تغییر در نامه دامنه در مرورگر جهت مشاهده تنظیمات باز کنید.
 
 ```
-       https://myservice.hiddify.com/751F2F753854422EA4C5FDDB8314F068/
+       https://myservice.antyfilter.com/751F2F753854422EA4C5FDDB8314F068/
 ```    
 
 در زیر توضیحات با تصویر نشان داده شده است.
@@ -236,7 +236,7 @@ After your domain nameservers changed successfully (depending on the registrar, 
   var host = document.getElementById("userdomain").value;
   var secret = document.getElementById("usersecret").value;
  
-  str=str.replaceAll('myservice.hiddify.com',host);
+  str=str.replaceAll('myservice.antyfilter.com',host);
   str=str.replaceAll('751F2F753854422EA4C5FDDB8314F068',secret);
   return str;
  }

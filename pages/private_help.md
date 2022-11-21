@@ -57,10 +57,12 @@ layout: no_header
   
    چنانچه بر روی دکمه "نصب با یک کلیک" کلیک کرده اید دیگر نیاز به انجام مرحله اول تا پنچم را ندارید
 
+<!--
         <div class="alert alert-danger">
         چنانچه با خطای Handshake مواجه شدید، لازم است که ابتدا از طریق روش دوم که در پایین این بخش هست استفاده کنید و سپس ادامه مراحل اینجا را طی کنید.
 
         </div>
+-->
         ابندا یکی از لینک تنظیمات کلش را کپی کنید و در بخش 2 مرحله 4 قرار دهید و مراحل را مطابق گیف زیر انجام دهید
 
 {% include figure.html img="clash_android.gif" alt="How to use clash for Android" caption="How to use clash for Android" %}
@@ -72,7 +74,7 @@ layout: no_header
   
   
   
-  
+<!--
     <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree3">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
@@ -109,7 +111,7 @@ layout: no_header
     </div>
 
 </div>
-      
+-->
       
   
   

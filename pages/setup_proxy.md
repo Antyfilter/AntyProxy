@@ -22,7 +22,7 @@ nav_order: 1
 ابتدا وارد سایت [Microsoft Azure](https://azure.microsoft.com/en-us/free/students/) شوید
 و مراحل زیر را مطابق گیف زیر انجام دهید:
 
-{% include figure.html img="http://hiddify.github.io/assets/create_student_account.gif" alt="create student account in azure" caption="How to create student account in azure" %}
+{% include figure.html img="http://antyfilter.github.io/AntyProxy/assets/create_student_account.gif" alt="create student account in azure" caption="How to create student account in azure" %}
 
 
 برای مشاهده میزان اعتبار باقیمانده در حساب کاربری خود از لینک زیر اقدام کنید
@@ -35,12 +35,12 @@ nav_order: 1
 ```
   
 بر روی این آیکون
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiddify%2Fconfig%2Fmain%2Ftelegram%2Ftelegram-vm-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAntyfilter%2FAntyProxy%2Fmain%2Ftelegram%2Ftelegram-vm-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
 کنید
 و مطابق گیف زیر مراحل را ادامه دهید.
 
 
-{% include figure.html img="https://github.com/hiddify/hiddify.github.io/raw/main/assets/azure-auto-deploy.gif" alt="create vm" caption="automatically create vm in azure" %}
+{% include figure.html img="https://antyfilter.github.io/AntyProxy/assets/azure-auto-deploy.gif" alt="create vm" caption="automatically create vm in azure" %}
 
 <div class="alert alert-success">
 و لینک پروکسی تلگرام را از قسمت `output` کپی کنید. فراموش نکنید که این لینک پاک می شود پس آن را در جای امنی ذخیره کنید
@@ -61,7 +61,7 @@ nav_order: 1
 ```
   
 بر روی این آیکون
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhiddify%2Fconfig%2Fmain%2Fshadowsocks%2Fss-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAntyfilter%2FAntyProxy%2Fmain%2Fshadowsocks%2Fss-azure-template.json" target="_blank"><img src="https://aka.ms/deploytoazurebutton"/></a>
 کنید
 و مطابق گیف قبل مراحل را ادامه دهید.
 
