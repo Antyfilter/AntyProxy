@@ -1,9 +1,9 @@
 ---
-title: آموزش استفاده از انتی‌پروکسی
+title: آموزش استفاده
 layout: no_header
 ---
 
-# گذرنده تلگرام
+## گذرنده تلگرام
 
 بر روی لینک زیر کلیک کنید تا بر روی تلگرام شما تنظیم شود.
 <a href="tg://proxy?server=serverip&port=443&secret=eeusersecret6d61696c2e676f6f676c652e636f6d" class='btn btn-primary'>گذرنده تلگرام کلیک کنید</a>
@@ -14,7 +14,7 @@ layout: no_header
 <a href="https://signal.tube/#proxyproviderip/eeusersecret6d61696c2e676f6f676c652e636f6d/" class='btn btn-primary'>گذرنده سیگنال کلیک کنید</a>
 -->
 
-# گذرنده سایت ها و اپلیکشن ها:
+## گذرنده سایت ها و اپلیکشن ها:
 
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -35,6 +35,7 @@ layout: no_header
 
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/lite-meta.yml" class="btn btn-primary">نصب گذرنده سایت های فیلتر</a>
 <a href="https://proxyproviderip/usersecret/clash/lite-meta.yml" class="btn btn-success copylink">کپی لینک</a>
+
 <h3>
 روش هوشمند فقط برای سایت های خارجی
 
@@ -43,6 +44,7 @@ layout: no_header
 
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/normal.yml" class="btn btn-primary">نصب گذرنده سایت های غیرایرانی</a>
 <a href="https://proxyproviderip/usersecret/clash/normal.yml" class="btn btn-success copylink">کپی لینک</a>
+
 <h3>
 استفاده همیشه
 
@@ -63,6 +65,7 @@ layout: no_header
 
         </div>
 -->
+
         ابندا یکی از لینک تنظیمات کلش را کپی کنید و در بخش 2 مرحله 4 قرار دهید و مراحل را مطابق گیف زیر انجام دهید
 
 {% include figure.html img="clash_android.gif" alt="How to use clash for Android" caption="How to use clash for Android" %}
