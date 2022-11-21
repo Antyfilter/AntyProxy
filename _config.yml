@@ -9,10 +9,10 @@
 #######
 # SITE SETTINGS
 #
-title: گذرنده
-description: "ما در تلاشیم روشی ساده و کارآمد را برای عبور از سختی ها معرفی کنیم"
+title: آموزش استفاده انتی‌پروکسی |‌دسترسی به اینترنت آزاد
+description: انتی‌پروکسی مجموعه‌ای از راه‌حل های مختلف برای عبور از مشکلات اینترنت برای همه پلتفرم هاست.
 year: 2022
-author: نووان
+author: انتی
 # add search box to navbar, true/false
 search: true
 
@@ -36,14 +36,13 @@ source-code: https://github.com/Antyfilter/AntyProxy
 #
 # leave this blank or comment out to NOT include google code
 # Add your google-analytics-id to automatically add the embed code, e.g. "UA-76328753-1"
-google-analytics-id:
+google-analytics-id: G-YR84PFGVDE
 
 ##########
 # ROBOTS EXCLUDE [optional!]
 #
 # set noindex to true if you do NOT want Google to index your site
-# noindex: true 
-
+# noindex: true
 
 #######
 # BUILD SETTINGS [usually leave as is]
@@ -52,7 +51,7 @@ google-analytics-id:
 # all files in the "pages" folder will be output at root of site
 defaults:
   - scope:
-      path: "pages"
+      path: 'pages'
     values:
       layout: page
       permalink: /:basename:output_ext

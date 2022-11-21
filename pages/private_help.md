@@ -1,9 +1,10 @@
 ---
-title: آموزش استفاده
+title: آموزش استفاده از انتی‌پروکسی
 layout: no_header
 ---
 
 # گذرنده تلگرام
+
 بر روی لینک زیر کلیک کنید تا بر روی تلگرام شما تنظیم شود.
 <a href="tg://proxy?server=serverip&port=443&secret=eeusersecret6d61696c2e676f6f676c652e636f6d" class='btn btn-primary'>گذرنده تلگرام کلیک کنید</a>
 
@@ -14,7 +15,6 @@ layout: no_header
 -->
 
 # گذرنده سایت ها و اپلیکشن ها:
-
 
 <div class="accordion" id="accordionExample">
   <div class="accordion-item">
@@ -28,28 +28,27 @@ layout: no_header
         ابتدا یکی از نرم افزارهای زیر را دانلود کنید:
 <a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash"><img src="/images/google-play-badge.png"></a>
 <a href="../gh/Kr328/ClashForAndroid/releases/download/v2.5.11/cfa-2.5.11-premium-universal-release.apk"><img src="/images/android-apk-badge.png"></a>
-
-
-        
-        <h2>لینک تنظیمات:</h2>
-روی یکی از لینک های زیر با توجه به نیازتان **راست کلیک** کرده و کپی کنید
-
-       <h3> روش هوشمند فقط برای سایت های فیلتر (سایت های فیلتر نشده بدون هیچ افت سرعتی کار میکنه)</h3>
+        <h2> لینک تنظیمات: </h2>
+روی یکی از لینک های زیر با توجه به نیازتان راست کلیک کرده و کپی کنید
+       <h3> روش هوشمند فقط برای سایت های فیلتر </h3>
+سایت های فیلتر نشده بدون هیچ افت سرعتی کار میکنند.
 
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/lite-meta.yml" class="btn btn-primary">نصب گذرنده سایت های فیلتر</a>
 <a href="https://proxyproviderip/usersecret/clash/lite-meta.yml" class="btn btn-success copylink">کپی لینک</a>
+<h3>
+روش هوشمند فقط برای سایت های خارجی
 
- 
-        <h3>
-روش هوشمند فقط برای سایت های خارجی (برای گذر از برخی تحریم ها مفید هست)
-        </h3>
+</h3>
+.برای گذر از برخی تحریم ها مفید هست
+
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/normal.yml" class="btn btn-primary">نصب گذرنده سایت های غیرایرانی</a>
 <a href="https://proxyproviderip/usersecret/clash/normal.yml" class="btn btn-success copylink">کپی لینک</a>
+<h3>
+استفاده همیشه
 
+</h3>
+باعث کاهش سرعت سایت های داخلی میشود.
 
-        <h3>
-استفاده  همیشه (کاهش سرعت سایت های داخلی)
-        </h3>
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/all.yml" class="btn btn-primary">نصب گذرنده همه سایت ها</a>
 <a href="https://proxyproviderip/usersecret/clash/all.yml" class="btn btn-success copylink">کپی لینک</a>
 
@@ -60,16 +59,15 @@ layout: no_header
 
         <div class="alert alert-danger">
         چنانچه با خطای Handshake مواجه شدید، لازم است که ابتدا از طریق روش دوم که در پایین این بخش هست استفاده کنید و سپس ادامه مراحل اینجا را طی کنید.
-          
+
         </div>
         ابندا یکی از لینک تنظیمات کلش را کپی کنید و در بخش 2 مرحله 4 قرار دهید و مراحل را مطابق گیف زیر انجام دهید
-       
+
 {% include figure.html img="clash_android.gif" alt="How to use clash for Android" caption="How to use clash for Android" %}
 
-        
-        
       </div>
     </div>
+
   </div>
   
   
@@ -107,10 +105,9 @@ layout: no_header
 <a href='vmess://{"add":"proxyproviderip","aid":"0","host":"cloudprovider","id":"f1f1b4c7-33e7-be38-4903-70d4bdf65539","net":"ws","path":"/usersecret/vmess/","port":"443","ps":"proxyproviderip","scy":"chacha20-poly1305","sni":"proxyproviderip","tls":"tls","type":"","v":"2"}' class="btn btn-primary"> نصب کانفیگ vmess</a>
 <a href='vmess://{"add":"proxyproviderip","aid":"0","host":"cloudprovider","id":"f1f1b4c7-33e7-be38-4903-70d4bdf65539","net":"ws","path":"/usersecret/vmess/","port":"443","ps":"test","scy":"chacha20-poly1305","sni":"proxyproviderip","tls":"tls","type":"","v":"2"}' class="btn btn-success copylink">کپی لینک</a>
 
-        
-
       </div>
     </div>
+
 </div>
       
       
@@ -134,45 +131,51 @@ layout: no_header
    <a href="../gh/Fndroid/clash_for_windows_pkg/releases/download/0.20.4/Clash.for.Windows-0.20.4.dmg"><img src="/images/BadgeMacOS.png"></a>
            <a href="../gh/Fndroid/clash_for_windows_pkg/releases/download/0.20.5/Clash.for.Windows-0.20.5-x64-linux.tar.gz"><img src="/images/BadgeLinux.png"></a>
 
-
-        
-        
-
         <h2>لینک تنظیمات:</h2>
+
 روی یکی از لینک های زیر با توجه به نیازتان **راست کلیک** کرده و کپی کنید
 
          <h3> استفاده هوشمند  فقط برای سایت های فیل.تر و واتساپ و اینستاگرام</h3>
 
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/lite-meta.yml" class="btn btn-primary">نصب با یک کلیک</a>
 <a href="https://proxyproviderip/usersecret/clash/lite-meta.yml" class="btn btn-success copylink">کپی لینک</a>
+
 <!--
 <h3>استفاده هوشمند از فیلترشکن فقط برای سایت های فیلتر</h3>
-        
+
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/lite.yml" class="btn btn-primary">نصب با یک کلیک</a>
 <a href="https://proxyproviderip/usersecret/clash/lite.yml" class="btn btn-success copylink">کپی لینک</a>
  -->
+
         <h3>
-استفاده هوشمند  فقط برای سایت های خارجی
-        </h3>
+
+استفاده هوشمند فقط برای سایت های خارجی
+
+</h3>
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/normal.yml" class="btn btn-primary">نصب با یک کلیک</a>
 <a href="https://proxyproviderip/usersecret/clash/normal.yml" class="btn btn-success copylink">کپی لینک</a>
 
-
         <h3>
-استفاده  همیشه (کاهش سرعت سایت های داخلی)
-        </h3>
+
+استفاده همیشه (کاهش سرعت سایت های داخلی)
+
+</h3>
 <a href="clash://install-config?url=https://proxyproviderip/usersecret/clash/all.yml" class="btn btn-primary">نصب با یک کلیک</a>
 <a href="https://proxyproviderip/usersecret/clash/all.yml" class="btn btn-success copylink">کپی لینک</a>
 
         <h2>
+
 ## کار با کلش ویندوز، مک و لینوکس
+
         </h2>
+
 چنانچه بر روی دکمه "نصب با یک کلیک" کلیک کرده اید دیگر نیاز به انجام مرحله دوم را ندارید فقط مرحله اول کافی است
 ابندا یکی از لینک تنظیمات کلش را کپی کنید و در قسمت 1 تصویر دوم گیف قرار دهید و مراحل را مطابق گیف زیر انجام دهید
 {% include figure.html img="clash_windows.gif" alt="How to use clash for windows and macOS" caption="How to use clash for windows and macOS" %}
 
       </div>
     </div>
+
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
@@ -197,19 +200,20 @@ layout: no_header
 
         <!--
         <br/>
-        <br/>        
-        
-        
+        <br/>
+
 <a href="ss://chacha20-ietf-poly1305:usersecret@proxyproviderip:443?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Bpath%3D%2Fusersecret%2Fv2ray%2F%3Bhost%3Dproxyproviderip%3Btls&udp-over-tcp=true#v2ray_proxyproviderip" class="btn btn-primary"> نصب کانفیگ قدیمی</a>
 <a href="ss://chacha20-ietf-poly1305:usersecret@proxyproviderip:443?plugin=v2ray-plugin%3Bmode%3Dwebsocket%3Bpath%3D%2Fusersecret%2Fv2ray%2F%3Bhost%3Dproxyproviderip%3Btls&udp-over-tcp=true#v2ray_proxyproviderip" class="btn btn-success copylink">کپی لینک</a>
-        <br/>
-        <br/>
+<br/>
+<br/>
 <a href="ss://chacha20-ietf-poly1305:usersecret@proxyproviderip:443?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3Dwww.google.com&udp-over-tcp=true#proxyproviderip" class="btn btn-primary">نصب کانفیگ قدیمی2</a>
 <a href="ss://chacha20-ietf-poly1305:usersecret@proxyproviderip:443?plugin=obfs-local%3Bobfs%3Dtls%3Bobfs-host%3Dwww.google.com&udp-over-tcp=true#proxyproviderip" class="btn btn-success copylink">کپی لینک</a>
-        -->
-        {% include figure.html img="ios_shadow.gif" alt="How to use v2 ray for iOS" caption="How to use clash for iOS" %}
-      </div>
-    </div>
+-->
+{% include figure.html img="ios_shadow.gif" alt="How to use v2 ray for iOS" caption="How to use clash for iOS" %}
+
+</div>
+</div>
+
   </div>
 </div>
 
