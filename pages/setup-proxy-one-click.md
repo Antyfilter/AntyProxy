@@ -1,5 +1,5 @@
 ---
-title: فیلترشکن چندگانه
+title: انتی‌پروکسی
 nav: فیلترشکن + تلگرام با یک کلیک
 nav_order: 1
 ---
@@ -11,15 +11,15 @@ nav_order: 1
  
  پروکسی ایجاد شده یک پروکسی faketls هست که در صورتی که کلاینت غیر تلگرام به آن متصل شود سایت گوگل را نشان می‌دهد.
 
- `(faketls domain=mail.google.com)`
- 
+`(faketls domain=mail.google.com)`
+
 </details>
 <details  markdown="1"> <summary>Shadowsocks+obfs </summary>
  
  پروکسی شدوساکس مشابه پروکسی تلگرام فوق، از faketls استفاده میکند تا ترافیک شدوساکس را پنهان کند.
 
- `faketls domain=www.google.com` 
- 
+`faketls domain=www.google.com`
+
 </details>
 <details markdown="1"> <summary>Shadowsocks+v2ray (cdn support)</summary>
  
@@ -63,8 +63,7 @@ Same as v2ray
        - سرعت بازدید از صفحات ایرانی کمتر شود 
        - باعث شود سرور شما سریعتر شناسایی شود
  
- کانفیگ اول یا دوم کمک به دیرتر شناسایی شدن پروکسی میکند و کانفیگ سوم ممکن است 
-
+ کانفیگ اول یا دوم کمک به دیرتر شناسایی شدن پروکسی میکند و کانفیگ سوم ممکن است
 
 </details>
  <details markdown="1"> <summary>مقاوم در برابر کشف توسط فیلترچی</summary>
@@ -76,21 +75,24 @@ Same as v2ray
  
  {% include figure.html img="https://user-images.githubusercontent.com/114227601/196612827-7a39a914-cdfc-408e-aa73-1343bc312f6c.png" caption="صفحه راهنمای کاربران" %}
 
-
 </details>
-<details markdown="1"> <summary>Open Source</summary> 
+<details markdown="1"> <summary>Open Source</summary>
 
-کلیه سورس کدها در [گیت هاب](https://github.com/Antyfilter/AntyProxy) 
+کلیه سورس کدها در [گیت هاب](https://github.com/Antyfilter/AntyProxy)
+
 </details>
 
 # پیش نیازها:
+
 - یک vps آماده با ubuntu 20.04 و آی پی مثلا `1.1.1.1`
-- یک دامنه یا زیردامنه (برای مثال: `myservice.antyfilter.com`) که رکورد A ی آن به آی پی شما وصل باشد. اگر زیر دامنه ندارید از 
- [این لینک](create-subdomain.html)
-یک زیر دامنه برای خود بسازید
+- یک دامنه یا زیردامنه (برای مثال: `myservice.antyfilter.com`) که رکورد A ی آن به آی پی شما وصل باشد. اگر زیر دامنه ندارید از
+  [این لینک](create-subdomain.html)
+  یک زیر دامنه برای خود بسازید
 
 ### مرحله 1: پارامترها
-ابتدا دامنه خود را در بخش زیر قرار دهید. 
+
+ابتدا دامنه خود را در بخش زیر قرار دهید.
+
 <form class="form-inline">
   <div class="input-group mb-2 mr-sm-2">
     <div class="input-group-prepend">
@@ -106,41 +108,42 @@ Same as v2ray
     </div>
     <input  type="text" class="form-control" id="usersecret" placeholder="secret" pattern="[0-9a-fA-F]{32}" required minlength="32" maxlength="32"  value="751F2F753854422EA4C5FDDB8314F068" oninput="handleValueChange()">
   </div>
-</form>  
+</form>
 
+### مرحله 2: چک کردن آنکه این زیر دامنه به آی پی متصل است
 
-### مرحله 2: چک کردن آنکه این زیر دامنه به آی پی متصل است 
-با کلیک بر روی دکمه 
+با کلیک بر روی دکمه
 <a href="https://mxtoolbox.com/SuperTool.aspx?action=a%3amyservice.antyfilter.com&run=toolpage" target="_blank" class="btn btn-primary">check</a>
 چک کنید که زیر دامنه درست به IP اشاره میکند.
 اگر تازه انجام داده اید و در بالا IP سرور خود را نمی بینید 5 دقیقه صبر کنید و مجدد تست کنید
 
-  
 ### مرحله 3: اجرای اسکریپت
 
 به سرور خود با ssh متصل شوید و دستور زیر را اجرا کنید
+
 ```
 bash <(curl -sL https://raw.githubusercontent.com/Antyfilter/AntyProxy/main/install.sh) 751F2F753854422EA4C5FDDB8314F068 myservice.antyfilter.com all myservice.antyfilter.com
 ```
-            
+
 <!--
 curl https://raw.githubusercontent.com/Antyfilter/AntyProxy/main/install.sh | bash -s -- 751F2F753854422EA4C5FDDB8314F068 myservice.antyfilter.com all myservice.antyfilter.com
 bash install.sh 751F2F753854422EA4C5FDDB8314F068 myservice.antyfilter.com all myservice.antyfilter.com-->
+
 پس از اجرای موفقیت آمیز، سرور ری استارت میشود و با کلیک بر روی لینک زیر میتوانید جزییات کانفیگ سمت کلاینت سرور را ببینید:
 <a href="https://myservice.antyfilter.com/751F2F753854422EA4C5FDDB8314F068/" target='_blank' class='btn btn-primary'>تنظیمات اختصاصی برای کلاینت ها </a>
+
 <div class="alert alert-success">
 توجه داشته باشید که لینک را حتما کپی کنید. این لینک به صورت تصادفی ایجاد شده و با ریفرش شدن صفحه تغییر میکند  پس آن را در جای امنی ذخیره کنید
 </div>
-
 
 # تنظیمات پیشرفته
 
 <details markdown="1"> <summary>نصب مجدد</summary>
 
-ابتدا دستور زیر را اجرا کنید و سپس دستورات بالا را مجدد اجرا کنید. 
-                                 
+ابتدا دستور زیر را اجرا کنید و سپس دستورات بالا را مجدد اجرا کنید.
+
 ```
-rm -rf /opt/AntyProxy/ 
+rm -rf /opt/AntyProxy/
 ```
 
 </details>
@@ -165,14 +168,11 @@ rm -rf /opt/AntyProxy/
 
 ```
        https://myservice.antyfilter.com/751F2F753854422EA4C5FDDB8314F068/
-```    
+```
 
 در زیر توضیحات با تصویر نشان داده شده است.
-       
-       
 
-
- ### 2. Arvancloud setup
+### 2. Arvancloud setup
 
 4. Log in to the Arvancloud account and add your domain.
 
@@ -204,24 +204,9 @@ After your domain nameservers changed successfully (depending on the registrar, 
 7. After the certificate is issued, enable the `Activate HTTPS` option.
    ![HTTPS Settings > Activate HTTPS](https://raw.githubusercontent.com/WeAreMahsaAmini/FreeInternet/main/protocols/media/arvanclound_https.jpg 'Enable cloud services')
 
-
-
-
-
-
-
-
-
-(توضیحات بخش CDN برگرفته از دوستان FreeInternet)[https://github.com/WeAreMahsaAmini/FreeInternet/tree/main/protocols/shadowsocks-v2ray-tls]
-       
-
-
 # اگر از ابرآروان استفاده میکنید
- به جای زیر پارامتر چهارم در اسکریپت فوق عبارت arvancloud.com را قرار دهید.
-       
 
-
-
+به جای زیر پارامتر چهارم در اسکریپت فوق عبارت arvancloud.com را قرار دهید.
 
 <script>
  const genRanHex = size => [...Array(size)]
